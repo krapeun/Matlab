@@ -1,4 +1,4 @@
-% 1Week Gaussian 12171788 ¹ÚÁöÀº
+% 1Week Gaussian 12171788 Â¹ÃšÃÃ¶Ã€Âº
 
 N = 50000;
 R = 100;
@@ -9,7 +9,7 @@ T = randn(1, N);
 G = T*stdev + avg;
 
 [M, X] = hist(G,R);
-resol = X(2) - X(1); % ÇÑ ±¸°£ÀÇ ±æÀÌ
+resol = X(2) - X(1); % length of one section
 
 pdf = M/N/resol;
 cdf = cumsum(pdf*resol);
